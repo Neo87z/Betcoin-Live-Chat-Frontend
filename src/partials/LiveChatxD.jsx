@@ -4,6 +4,7 @@ import Transition from '../utils/Transition';
 import TabsImage01 from '../images/tabs-image-01.jpg';
 import HeroImage01 from '../images/hero-image-01.jpg';
 import { Link } from 'react-router-dom';
+import TargetImage from '../images/features-02-image.png';
 
 import NewsImage01 from '../images/news-01.jpg';
 import NewsImage02 from '../images/news-02.jpg';
@@ -48,55 +49,52 @@ function Tabs() {
 
   return (
     <section>
-
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20  border-gray-800">
-          <div className="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>
-            <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">Live Chat</h2>
+        <div className="py-12 md:py-20 border-t border-gray-800">
 
+          {/* Section header */}
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <h2 className="h2" data-aos="fade-up">Live Chat</h2>
           </div>
-          <div className="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>
-            <div style={{ width: '100%', height: '500px', overflow: 'auto', margin: '20px', textAlign: 'justify', padding: '20px' }}>
-              <div className="max-w-3xl mx-auto -my-4 md:-my-6" data-aos-id-timeline>
 
-                {/* 1st item */}
-                {reversedData.map((val, key) => {
-                  console.log(val)
-                  return <div>
+          {/* Items */}
+          <div className="grid gap-20" data-aos-id-target>
 
-                    <div className="relative py-4 md:py-6 pl-24" data-aos="fade-up" data-aos-anchor="[data-aos-id-timeline]">
-                      <div className="pl-2">
+            {/* Item */}
+            <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
 
-                        <div className="flex items-center mb-3">
-                          <div className="absolute left-0 inline-flex text-sm font-semibold py-1 px-3 text-green-600 bg-green-200 rounded-full">{val.Sender}</div>
+              {/* Image */}
 
-                          <div className="absolute left-12 h-full px-px bg-gray-800 ml-20 self-start transform -translate-x-1/2 translate-y-3" aria-hidden="true"></div>
-                          <div className="absolute left-12 w-2 h-2 bg-purple-600 border-4 box-content border-gray-900 rounded-full ml-20 transform -translate-x-1/2" aria-hidden="true"></div>
+
+              {/* Content */}
+
+              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-10">
+                <div className="md:pl-4 lg:pl-12 xl:pl-16">
+                  <div className="grid gap-12 md:grid-cols-1 md:gap-x-6 md:gap-y-8 items-start">
+                    <div style={{ width: '100%', height: '500px', overflow: 'auto', margin: '20px', textAlign: 'justify', padding: '20px' }}>
+                      {reversedData.map((val, key) => {
+                        console.log(val)
+                        return <div>
+                          <div className="font-architects-daughter text-xl text-green-600 mb-2" data-aos="fade-left" data-aos-anchor="[data-aos-id-target]">From :-{val.Sender.substring(0, 15)}</div>
+                          <div className="mt-1" data-aos="fade-left" data-aos-delay="200" data-aos-anchor="[data-aos-id-target]">
+
+                            <p className="text-lg text-gray-400">{val.Message}</p>
+                          </div>
                         </div>
-
-                        <p style={{ marginLeft: '30px' }} className="text-lg text-gray-400">{val.Message}</p>
-                      </div>
+                      })}
                     </div>
 
                   </div>
-                })}
-
-
-
+                </div>
               </div>
-
 
             </div>
 
           </div>
 
-
-          {/* Section content */}
-
-
         </div>
       </div>
-    </section >
+    </section>
   );
 }
 

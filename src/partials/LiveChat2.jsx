@@ -99,7 +99,7 @@ function Tabs() {
                   <header>
                     <div className="block mb-9" to="/blog-post">
                       <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                        <h1>asdas</h1>
+                        <img className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src={Img56} width="352" height="198" alt="News 01" />
                       </figure>
                     </div>
 

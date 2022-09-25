@@ -70,7 +70,7 @@ function Tabs() {
                           <div className="pl-2">
 
                             <div className="flex items-center mb-3">
-                              <div className="absolute left-0 inline-flex text-sm font-semibold py-1 px-3 text-green-600 bg-green-200 rounded-full">{val.Sender}</div>
+                              <div className="absolute left-0 inline-flex text-sm font-semibold py-1 px-3 text-green-600 bg-green-200 rounded-full">{val.Sender.substring(0,15)}</div>
 
                               <div className="absolute left-12 h-full px-px bg-gray-800 ml-20 self-start transform -translate-x-1/2 translate-y-3" aria-hidden="true"></div>
                               <div className="absolute left-12 w-2 h-2 bg-purple-600 border-4 box-content border-gray-900 rounded-full ml-20 transform -translate-x-1/2" aria-hidden="true"></div>

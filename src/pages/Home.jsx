@@ -38,6 +38,7 @@ function Home() {
       </main>
 
       {/*  Site footer */}
+      <Footer />
 
 
     </div>

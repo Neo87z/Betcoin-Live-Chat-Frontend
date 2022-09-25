@@ -153,7 +153,7 @@ function Tabs() {
         <div className="py-12 md:py-20  border-gray-800">
 
           <div className="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>
-            <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">Current Bets</h2>
+            <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">Main Events</h2>
 
           </div>
 
@@ -260,7 +260,7 @@ function Tabs() {
                   <header>
                     <div className="block mb-9" to="/blog-post">
                       <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                        <img className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src={Img562} width="352" height="198" alt="News 01" />
+                        <img className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src={Team1Logo} width="352" height="198" alt="News 01" />
                       </figure>
                     </div>
 
@@ -294,7 +294,7 @@ function Tabs() {
                   <header>
                     <div className="block mb-9" to="/blog-post">
                       <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                        <img className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src={Img562} width="352" height="198" alt="News 01" />
+                        <img className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src={Team1Logo2} width="352" height="198" alt="News 01" />
                       </figure>
                     </div>
 
@@ -327,7 +327,7 @@ function Tabs() {
                   <header>
                     <div className="block mb-9" to="/blog-post">
                       <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                        <img className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src={Img562} width="352" height="198" alt="News 01" />
+                        <img className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src={Team1Logo23} width="352" height="198" alt="News 01" />
                       </figure>
                     </div>
 
@@ -360,7 +360,7 @@ function Tabs() {
                   <header>
                     <div className="block mb-9" to="/blog-post">
                       <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                        <img className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src={Img562} width="352" height="198" alt="News 01" />
+                        <img className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src={Team1Logo234} width="352" height="198" alt="News 01" />
                       </figure>
                     </div>
 
