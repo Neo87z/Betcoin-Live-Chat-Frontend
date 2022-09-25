@@ -70,6 +70,7 @@ function Tabs() {
 
       if (response.data[0] != undefined) {
         console.log(response.data[0].ImageURL, 'Finallll Da 1')
+        setImgData222(response.data[0].ImageURL)
         setImgData22(response.data[0].Team1)
         setImgData2222a(response.data[0].Team2)
         steLogoTeaam1(response.data[0].Team1Logo)
@@ -145,17 +146,17 @@ function Tabs() {
     heightFix()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tab])
-
   return (
     <section>
-      <div className="max-w-8xl mx-auto px-4 sm:px-6">
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20  border-gray-800">
 
-
           <div className="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>
-            <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">Main Event</h2>
+            <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">Current Bets</h2>
 
           </div>
+
 
           {/* Section content */}
           <div>
@@ -164,7 +165,7 @@ function Tabs() {
             <div className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
               {BetList.map((val, key) => {
                 if (val.BetID == 1) {
-                  return <div  style={{marginBottom:'10px'}}  className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
+                  return <div style={{ marginBottom: '10px' }} className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
 
                     <button
                       className={`flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500 ${tab !== 1 && 'opacity-50'}`}
@@ -179,7 +180,7 @@ function Tabs() {
                 }
 
                 if (val.BetID == 2) {
-                  return <div style={{marginLeft:'10px',marginBottom:'10px'}} className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
+                  return <div style={{ marginLeft: '10px', marginBottom: '10px' }} className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
                     <button
                       className={`flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500 ${tab !== 2 && 'opacity-50'}`}
                       onClick={() => setTab(2)}
@@ -194,7 +195,7 @@ function Tabs() {
                 }
 
                 if (val.BetID == 3) {
-                  return <div  style={{marginLeft:'10px',marginBottom:'10px'}}  className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
+                  return <div style={{ marginLeft: '10px', marginBottom: '10px' }} className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
                     <button
 
                       className={`flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500 ${tab !== 3 && 'opacity-50'}`}
@@ -208,7 +209,7 @@ function Tabs() {
                   </div>
                 }
                 if (val.BetID == 4) {
-                  return <div  style={{marginLeft:'10px',marginBottom:'10px'}}  className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
+                  return <div style={{ marginLeft: '10px', marginBottom: '10px' }} className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
                     <button
                       className={`flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500 ${tab !== 4 && 'opacity-50'}`}
                       onClick={() => setTab(4)}
@@ -221,7 +222,7 @@ function Tabs() {
                   </div>
                 }
                 if (val.BetID == 5) {
-                  return <div className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
+                  return <div style={{ marginLeft: '10px', marginBottom: '10px' }} className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
                     <button
                       className={`flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500 ${tab !== 5 && 'opacity-50'}`}
                       onClick={() => setTab(5)}
@@ -236,7 +237,6 @@ function Tabs() {
 
 
               })}
-
             </div>
 
             {/* Tabs items */}
@@ -254,51 +254,27 @@ function Tabs() {
                 leaveStart="opacity-100 scale-100"
                 leaveEnd="opacity-0 scale-98"
               >
+
+
                 <article className="flex flex-col h-full" data-aos="fade-up">
                   <header>
+                    <div className="block mb-9" to="/blog-post">
+                      <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
+                        <img className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src={Img562} width="352" height="198" alt="News 01" />
+                      </figure>
+                    </div>
 
+                    <div className="grid gap-12 md:grid-cols-1 md:gap-x-8 md:gap-y-8 items-start">
+                      <div className="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>
+                        <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">{TeamScore1}-{TeamScore2}</h2>
 
-
-                    <div className="block mb-9" >
-                      <div className="grid gap-12 md:grid-cols-2 md:gap-x-6 md:gap-y-8 items-start">
-                        <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                          <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                            <img className="absolute inset-0 w-full h-full  transform hover:scale-105 transition duration-700 ease-out" src={Team1Logo} width="352" height="198" alt="News 01" />
-                          </figure>
-                        </article>
-                        <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                          <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                            <img className="absolute inset-0 w-full h-full  transform hover:scale-105 transition duration-700 ease-out" src={Team2Logo} width="200" height="198" alt="News 01" />
-                          </figure>
-                        </article>
                       </div>
+
                     </div>
-
-                    <div className="grid gap-1 md:grid-cols-3 md:gap-x-0 md:gap-y-8 items-start">
-                      <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                        <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                          <h1 style={{ float: 'right' }} className="h1 mb-4" data-aos="fade-up">{TeamScore1}</h1>
-                        </figure>
-                      </article>
-                      <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                        <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                          <center><h1 className="h1 mb-4" data-aos="fade-up">-</h1></center>
-                        </figure>
-                      </article>
-                      <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                        <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                          <h1 style={{ float: 'left' }} className="h1 mb-8" data-aos="fade-up">{TeamScore2}</h1>
-                        </figure>
-                      </article>
-                    </div>
-
-
-
-
-
                   </header>
 
                 </article>
+
               </Transition>
 
               {/* Item 2 */}
@@ -313,48 +289,22 @@ function Tabs() {
                 leaveStart="opacity-100 scale-100"
                 leaveEnd="opacity-0 scale-98"
               >
-                <article className="flex flex-col h-full" data-aos="fade-up">
+               
+               <article className="flex flex-col h-full" data-aos="fade-up">
                   <header>
-
-
-
                     <div className="block mb-9" to="/blog-post">
-                      <div className="grid gap-12 md:grid-cols-2 md:gap-x-6 md:gap-y-8 items-start">
-                        <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                          <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                            <img className="absolute inset-0 w-full h-full  transform hover:scale-105 transition duration-700 ease-out" src={Team1Logo2} width="352" height="198" alt="News 01" />
-                          </figure>
-                        </article>
-                        <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                          <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                            <img className="absolute inset-0 w-full h-full  transform hover:scale-105 transition duration-700 ease-out" src={Team2Logo24} width="200" height="198" alt="News 01" />
-                          </figure>
-                        </article>
+                      <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
+                        <img className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src={Img562} width="352" height="198" alt="News 01" />
+                      </figure>
+                    </div>
+
+                    <div className="grid gap-12 md:grid-cols-1 md:gap-x-8 md:gap-y-8 items-start">
+                      <div className="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>
+                        <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">{TeamScore12}-{TeamScore22}</h2>
+
                       </div>
+
                     </div>
-
-                    <div className="grid gap-1 md:grid-cols-3 md:gap-x-0 md:gap-y-8 items-start">
-                      <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                        <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                          <h1 style={{ float: 'right' }} className="h1 mb-4" data-aos="fade-up">{TeamScore12}</h1>
-                        </figure>
-                      </article>
-                      <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                        <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                          <center><h1 className="h1 mb-4" data-aos="fade-up">-</h1></center>
-                        </figure>
-                      </article>
-                      <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                        <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                          <h1 style={{ float: 'left' }} className="h1 mb-8" data-aos="fade-up">{TeamScore22}</h1>
-                        </figure>
-                      </article>
-                    </div>
-
-
-
-
-
                   </header>
 
                 </article>
@@ -372,48 +322,22 @@ function Tabs() {
                 leaveStart="opacity-100 scale-100"
                 leaveEnd="opacity-0 scale-98"
               >
-                <article className="flex flex-col h-full" data-aos="fade-up">
+               
+               <article className="flex flex-col h-full" data-aos="fade-up">
                   <header>
-
-
-
                     <div className="block mb-9" to="/blog-post">
-                      <div className="grid gap-12 md:grid-cols-2 md:gap-x-6 md:gap-y-8 items-start">
-                        <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                          <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                            <img className="absolute inset-0 w-full h-full  transform hover:scale-105 transition duration-700 ease-out" src={Team1Logo23} width="352" height="198" alt="News 01" />
-                          </figure>
-                        </article>
-                        <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                          <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                            <img className="absolute inset-0 w-full h-full  transform hover:scale-105 transition duration-700 ease-out" src={Team2Logo234} width="200" height="198" alt="News 01" />
-                          </figure>
-                        </article>
+                      <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
+                        <img className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src={Img562} width="352" height="198" alt="News 01" />
+                      </figure>
+                    </div>
+
+                    <div className="grid gap-12 md:grid-cols-1 md:gap-x-8 md:gap-y-8 items-start">
+                      <div className="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>
+                        <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">{TeamScore13}-{TeamScore23}</h2>
+
                       </div>
+
                     </div>
-
-                    <div className="grid gap-1 md:grid-cols-3 md:gap-x-0 md:gap-y-8 items-start">
-                      <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                        <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                          <h1 style={{ float: 'right' }} className="h1 mb-4" data-aos="fade-up">{TeamScore13}</h1>
-                        </figure>
-                      </article>
-                      <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                        <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                          <center><h1 className="h1 mb-4" data-aos="fade-up">-</h1></center>
-                        </figure>
-                      </article>
-                      <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                        <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                          <h1 style={{ float: 'left' }} className="h1 mb-8" data-aos="fade-up">{TeamScore23}</h1>
-                        </figure>
-                      </article>
-                    </div>
-
-
-
-
-
                   </header>
 
                 </article>
@@ -431,48 +355,22 @@ function Tabs() {
                 leaveStart="opacity-100 scale-100"
                 leaveEnd="opacity-0 scale-98"
               >
-                <article className="flex flex-col h-full" data-aos="fade-up">
+               
+               <article className="flex flex-col h-full" data-aos="fade-up">
                   <header>
-
-
-
                     <div className="block mb-9" to="/blog-post">
-                      <div className="grid gap-12 md:grid-cols-2 md:gap-x-6 md:gap-y-8 items-start">
-                        <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                          <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                            <img className="absolute inset-0 w-full h-full  transform hover:scale-105 transition duration-700 ease-out" src={Team1Logo234} width="352" height="198" alt="News 01" />
-                          </figure>
-                        </article>
-                        <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                          <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                            <img className="absolute inset-0 w-full h-full  transform hover:scale-105 transition duration-700 ease-out" src={Team2Logo2345} width="200" height="198" alt="News 01" />
-                          </figure>
-                        </article>
+                      <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
+                        <img className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src={Img562} width="352" height="198" alt="News 01" />
+                      </figure>
+                    </div>
+
+                    <div className="grid gap-12 md:grid-cols-1 md:gap-x-8 md:gap-y-8 items-start">
+                      <div className="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>
+                        <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">{TeamScore14}-{TeamScore2}</h2>
+
                       </div>
+
                     </div>
-
-                    <div className="grid gap-1 md:grid-cols-3 md:gap-x-0 md:gap-y-8 items-start">
-                      <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                        <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                          <h1 style={{ float: 'right' }} className="h1 mb-4" data-aos="fade-up">{TeamScore14}</h1>
-                        </figure>
-                      </article>
-                      <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                        <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                          <center><h1 className="h1 mb-4" data-aos="fade-up">-</h1></center>
-                        </figure>
-                      </article>
-                      <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                        <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                          <h1 style={{ float: 'left' }} className="h1 mb-8" data-aos="fade-up">{TeamScore24}</h1>
-                        </figure>
-                      </article>
-                    </div>
-
-
-
-
-
                   </header>
 
                 </article>
@@ -490,32 +388,22 @@ function Tabs() {
                 leaveStart="opacity-100 scale-100"
                 leaveEnd="opacity-0 scale-98"
               >
+                
                 <article className="flex flex-col h-full" data-aos="fade-up">
                   <header>
-
-
-
                     <div className="block mb-9" to="/blog-post">
-                      <div >
-                        <article className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
-                          <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                            <svg className="absolute inset-0 max-w-full mx-auto md:max-w-none h-auto" width="540" height="520" viewBox="0 130 540 520" xmlns="http://www.w3.org/2000/svg">
-                              <g className="fill-current text-green-600">
-                                <circle className="pulse" cx="270" cy="260" r="64" />
-                                <circle className="pulse pulse-1" cx="270" cy="260" r="64" />
-                                <circle className="pulse pulse-2" cx="270" cy="260" r="64" />
-                                <circle className="pulse pulse-3" cx="270" cy="260" r="64" />
-                              </g>
-                            </svg>
-                          </figure>
-                        </article>
-
-                      </div>
+                      <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
+                        <img className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src={Img562} width="352" height="198" alt="News 01" />
+                      </figure>
                     </div>
 
+                    <div className="grid gap-12 md:grid-cols-1 md:gap-x-8 md:gap-y-8 items-start">
+                      <div className="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>
+                        <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">{TeamScore1}-{TeamScore2}</h2>
 
+                      </div>
 
-
+                    </div>
                   </header>
 
                 </article>

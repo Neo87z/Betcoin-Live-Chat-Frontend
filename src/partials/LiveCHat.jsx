@@ -50,7 +50,7 @@ function Tabs() {
         <div className="py-12 md:py-20  border-gray-800">
 
           <div className="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>
-            <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">Live CHat</h2>
+            <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">Live Chat</h2>
 
           </div>
 
