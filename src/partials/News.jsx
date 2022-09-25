@@ -9,7 +9,7 @@ import NewsAuthor02 from '../images/news-author-02.jpg';
 import NewsAuthor03 from '../images/news-author-03.jpg';
 import Tabs from '../partials/Tabs';
 import Match from '../partials/match';
-import LiveChat from '../partials/LiveChat2';
+import LiveChat from '../partials/LiveCHat';
 function News() {
   return (
     <section style={{ marginTop: '-80px' }}>
