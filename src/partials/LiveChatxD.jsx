@@ -75,7 +75,7 @@ function Tabs() {
                       {reversedData.map((val, key) => {
                         console.log(val)
                         return <div>
-                          <div className="font-architects-daughter text-xl text-green-600 mb-2" data-aos="fade-left" data-aos-anchor="[data-aos-id-target]">From :-{val.Sender.substring(0, 15)}</div>
+                          <div className=" text-xl text-green-600 mb-2" data-aos="fade-left" data-aos-anchor="[data-aos-id-target]">From :-{val.Sender.substring(0, 15)}</div>
                           <div className="mt-1" data-aos="fade-left" data-aos-delay="200" data-aos-anchor="[data-aos-id-target]">
 
                             <p className="text-lg text-gray-400">{val.Message}</p>
