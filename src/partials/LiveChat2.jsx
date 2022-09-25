@@ -99,7 +99,7 @@ function Tabs() {
                   <header>
                     <div className="block mb-9" to="/blog-post">
                       <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                        
+                        <h1>asdas</h1>
                       </figure>
                     </div>
 
@@ -122,6 +122,7 @@ function Tabs() {
                 leaveStart="opacity-100 scale-100"
                 leaveEnd="opacity-0 scale-98"
               >
+
 
               </Transition>
 
