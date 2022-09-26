@@ -90,7 +90,7 @@ function Tabs() {
             <div className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
             {BetList.map((val, key) => {
               if (val.BetID == 1) {
-                return <div style={{marginBottom:'10px'}}  className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
+                return <div style={{marginLeft: '10px',marginBottom:'10px'}}  className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
 
                   <button
                     className={`flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500 ${tab !== 1 && 'opacity-50'}`}
