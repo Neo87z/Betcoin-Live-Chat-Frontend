@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Modal from '../utils/Modal';
-
+import { Link } from 'react-router-dom';
 import HeroImage from '../images/hero-image-01.jpg';
 
 function HeroHome() {
@@ -8,7 +8,7 @@ function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   return (
-    <section style={{marginTop:'-120px',background:'black'}}>
+    <section style={{ marginTop: '-120px', background: 'black' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
 
         {/* Illustration behind hero content */}
@@ -29,13 +29,17 @@ function HeroHome() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up">Betcoin Live Game Chat</h1>
+            <Link to="/" className="block" aria-label="Cruip">
+
+              <img style={{height:'60px'}} className="fill-current text-purple-600" src="https://i.ibb.co/W06ZrRP/Asset-3.png"></img>
+
+            </Link> <h1 className="h1 mb-4" data-aos="fade-up">Betcoin Live Game Chat</h1>
             <p className="text-xl text-gray-400 mb-6" data-aos="fade-up" data-aos-delay="200">Crypto's first sports betting fund run by the world's top sports gamblers.</p>
-            
+
           </div>
 
           {/* Hero image */}
-          
+
 
         </div>
 

@@ -36,11 +36,7 @@ function Header() {
         <div className="flex items-center justify-between h-20">
           <div className="shrink-0 mr-4">
             {/* Logo */}
-            <Link to="/" className="block" aria-label="Cruip">
 
-              <img className="w-9 h-90 fill-current text-purple-600" src="https://i.ibb.co/W06ZrRP/Asset-3.png"></img>
-
-            </Link>
           </div>
 
 
