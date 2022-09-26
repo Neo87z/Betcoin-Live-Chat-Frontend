@@ -30,7 +30,7 @@ function HeroHome() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h1 mb-4" data-aos="fade-up">Betcoin Live Game Chat</h1>
-            <p className="text-xl text-gray-400 mb-6" data-aos="fade-up" data-aos-delay="200">Crypto's first sports betting fund run by the World's top sports gamblers.</p>
+            <p className="text-xl text-gray-400 mb-6" data-aos="fade-up" data-aos-delay="200">Crypto's first sports betting fund run by the world's top sports gamblers.</p>
             
           </div>
 
