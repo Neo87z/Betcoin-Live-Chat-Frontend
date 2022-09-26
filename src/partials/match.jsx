@@ -147,7 +147,7 @@ function Tabs() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tab])
   return (
-    <section>
+    <section style={{marginTop:'-70px'}}>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20  border-gray-800">

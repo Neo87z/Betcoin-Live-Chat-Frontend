@@ -22,11 +22,11 @@ function News() {
 
           <div className="grid gap-12 md:grid-cols-3 md:gap-x-6 md:gap-y-8 items-start">
             <div>
-              <div className="border-t border-gray-800">
+              <div >
                 <Tabs />
               </div>
             </div>  <div>
-              <div className="border-t border-gray-800">
+              <div >
                 <Match />
               </div>
             </div>
