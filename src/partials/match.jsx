@@ -366,7 +366,7 @@ function Tabs() {
 
                     <div className="grid gap-12 md:grid-cols-1 md:gap-x-8 md:gap-y-8 items-start">
                       <div className="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>
-                        <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">{TeamScore14}-{TeamScore2}</h2>
+                        <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">{TeamScore14}-{TeamScore24}</h2>
 
                       </div>
 
