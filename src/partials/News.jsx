@@ -12,7 +12,7 @@ import Match from '../partials/match';
 import LiveChat from '../partials/LiveChatxD';
 function News() {
   return (
-    <section style={{ marginTop: '-7%',background:'black' }}>
+    <section style={{ marginTop: '-7%',background:'#080808' }}>
 
       <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
         
