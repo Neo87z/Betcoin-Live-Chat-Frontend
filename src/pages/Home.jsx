@@ -10,6 +10,7 @@ import Target from '../partials/Target';
 import News from '../partials/News';
 import Newsletter from '../partials/Newsletter';
 import Footer from '../partials/Footer';
+import HeroAbout from '../partials/HeroAbout';
 
 function Home() {
   return (
@@ -22,12 +23,14 @@ function Home() {
       <main className="grow">
 
         {/*  Page illustration */}
+
+
+        {/*  Page sections */}
+        <HeroAbout />
         <div className="relative max-w-6xl mx-auto h-0 pointer-events-none" aria-hidden="true">
           <PageIllustration />
         </div>
 
-        {/*  Page sections */}
-        <HeroHome />
 
 
 

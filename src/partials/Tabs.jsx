@@ -72,8 +72,10 @@ function Tabs() {
   return (
     <section>
       
+      
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20  border-gray-800">
+          
 
         <div className="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>
             <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">Current Bets</h2>
