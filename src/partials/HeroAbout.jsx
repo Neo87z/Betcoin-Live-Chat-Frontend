@@ -1,6 +1,6 @@
 import React from 'react';
 
-import HeroImage from '../images/last1.png';
+import HeroImage from '../images/last2.png';
 
 function HeroAbout() {
   return (
