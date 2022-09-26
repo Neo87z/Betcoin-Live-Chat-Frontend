@@ -8,7 +8,7 @@ function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   return (
-    <section style={{marginTop:'-120px'}}>
+    <section style={{marginTop:'-120px',background:'black'}}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
 
         {/* Illustration behind hero content */}
