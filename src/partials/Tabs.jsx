@@ -70,7 +70,7 @@ function Tabs() {
   }, [tab])
 
   return (
-    <section style={{marginTop:'-70px'}}>
+    <section style={{marginTop:'-200px'}}>
       
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
