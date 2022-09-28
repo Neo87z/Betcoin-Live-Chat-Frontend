@@ -147,10 +147,10 @@ function Tabs() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tab])
   return (
-    <section style={{marginTop:'-70px'}}>
+    <section >
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20  border-gray-800">
+        <div >
 
           <div className="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>
             <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">Main Events</h2>
@@ -165,7 +165,7 @@ function Tabs() {
             <div className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
               {BetList.map((val, key) => {
                 if (val.BetID == 1) {
-                  return <div style={{marginLeft: '10px', marginBottom: '10px' }} className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
+                  return <div style={{ marginLeft: '10px', marginBottom: '10px' }} className="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
 
                     <button
                       className={`flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500 ${tab !== 1 && 'opacity-50'}`}
@@ -289,8 +289,8 @@ function Tabs() {
                 leaveStart="opacity-100 scale-100"
                 leaveEnd="opacity-0 scale-98"
               >
-               
-               <article className="flex flex-col h-full" data-aos="fade-up">
+
+                <article className="flex flex-col h-full" data-aos="fade-up">
                   <header>
                     <div className="block mb-9" to="/blog-post">
                       <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
@@ -322,8 +322,8 @@ function Tabs() {
                 leaveStart="opacity-100 scale-100"
                 leaveEnd="opacity-0 scale-98"
               >
-               
-               <article className="flex flex-col h-full" data-aos="fade-up">
+
+                <article className="flex flex-col h-full" data-aos="fade-up">
                   <header>
                     <div className="block mb-9" to="/blog-post">
                       <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
@@ -355,8 +355,8 @@ function Tabs() {
                 leaveStart="opacity-100 scale-100"
                 leaveEnd="opacity-0 scale-98"
               >
-               
-               <article className="flex flex-col h-full" data-aos="fade-up">
+
+                <article className="flex flex-col h-full" data-aos="fade-up">
                   <header>
                     <div className="block mb-9" to="/blog-post">
                       <figure className="relative h-0 pb-9/16 overflow-hidden rounded-sm">
@@ -388,7 +388,7 @@ function Tabs() {
                 leaveStart="opacity-100 scale-100"
                 leaveEnd="opacity-0 scale-98"
               >
-                
+
                 <article className="flex flex-col h-full" data-aos="fade-up">
                   <header>
                     <div className="block mb-9" to="/blog-post">

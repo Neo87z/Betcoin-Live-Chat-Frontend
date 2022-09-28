@@ -14,7 +14,7 @@ function News() {
   return (
     <section style={{ marginTop: '-7%',background:'black' }}>
 
-      <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
+      <div >
         
 
         {/* Section header */}
