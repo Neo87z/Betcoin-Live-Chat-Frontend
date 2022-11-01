@@ -22,7 +22,7 @@ function Tabs() {
 
   useEffect(() => {
     setFetchDataInterval(1000)
-    Axios.get('https://asdasdasdasd2222.herokuapp.com/rooms/TestData').then((response) => {
+    Axios.get('https://backendserveretcoin.herokuapp.com/rooms/TestData').then((response) => {
       setMessafeList(response.data)
       console.log(response.data)
     })
