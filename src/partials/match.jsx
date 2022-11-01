@@ -64,7 +64,7 @@ function Tabs() {
 
   useEffect(() => {
     setFetchDataInterval(1000)
-    Axios.get('https://asdasdasdasd2222.herokuapp.com/rooms/GetBet').then((response) => {
+    Axios.get('https://backendserveretcoin.herokuapp.com/rooms/GetBet').then((response) => {
       setBetList(response.data)
 
 
