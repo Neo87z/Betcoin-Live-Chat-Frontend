@@ -29,7 +29,7 @@ function Tabs() {
 
   useEffect(() => {
 
-    Axios.get('https://asdasdasdasd2222.herokuapp.com/rooms/GetBet').then((response) => {
+    Axios.get('https://backendserveretcoin.herokuapp.com/rooms/GetBet').then((response) => {
       setBetList(response.data)
 
 
